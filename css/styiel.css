@@ -1,0 +1,74 @@
+.Titel {
+    position: relative;
+    height: 50px;
+    padding-top: 25px;
+}
+.Titel h2 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 3em; 
+    margin: 0;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.Titel h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px  #68441a;
+}
+.Titel h2:nth-child(2) {
+    color:   #f7ba89;
+    animation: anime 3s ease-in-out infinite;
+}
+
+
+@keyframes anime{
+    0%{
+        opacity: 1;
+        transition: scale(1);
+    }
+    45%{
+        opacity: 0.3;
+        transition: scale(0.95);
+    }
+    55%{
+         opacity: 0.6;
+        transition: scale(0.65);
+    }
+    75%{
+        opacity: 0.9;
+        transition: scale(0.35);
+
+    }
+}
+
+.form-control{
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+#addbtn{
+    width: 20%;
+    border-radius: 20px;
+    margin-left: 20px;
+    background: #895d37;
+}
+
+.form-control{
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.card.h-100 {
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} 
+.card-body {
+    border-radius: 20px;
+    text-align: center;
+    background-color: #794723d6;
+}
+
